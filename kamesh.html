@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+</head>
+<body>
+
+<h2 align="center">Student Registration Form</h2>
+
+<form>
+
+<fieldset>
+<legend>Personal Details</legend>
+
+<label>Full Name:</label><br>
+<input type="text" name="name" placeholder="Enter your name"><br><br>
+
+<label>Email:</label><br>
+<input type="email" name="email" placeholder="Enter your email"><br><br>
+
+<label>Password:</label><br>
+<input type="password" name="password"><br><br>
+
+<label>Date of Birth:</label><br>
+<input type="date" name="dob"><br><br>
+
+<label>Gender:</label><br>
+<input type="radio" name="gender" value="Male"> Male
+<input type="radio" name="gender" value="Female"> Female
+<input type="radio" name="gender" value="Other"> Other
+<br><br>
+
+<label>Address:</label><br>
+<textarea rows="4" cols="30" placeholder="Enter your address"></textarea>
+<br><br>
+
+<label>Department (Combo Box):</label><br>
+<select name="department">
+    <option>Select Department</option>
+    <option>BCA</option>
+    <option>B.Sc Computer Science</option>
+    <option>B.Com</option>
+    <option>BBA</option>
+</select>
+<br><br>
+
+<label>Favorite Programming Language (List Box):</label><br>
+<input list="languages" name="language">
+<datalist id="languages">
+    <option value="HTML">
+    <option value="CSS">
+    <option value="JavaScript">
+    <option value="Java">
+    <option value="Python">
+</datalist>
+<br><br>
+
+<label>Phone Number:</label><br>
+<input type="tel" name="phone"><br><br>
+
+<label>Age:</label><br>
+<input type="number" name="age"><br><br>
+
+<button type="submit">Register</button>
+<button type="reset">Reset</button>
+
+</fieldset>
+
+</form>
+
+</body>
+</html>
