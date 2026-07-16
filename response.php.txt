@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Response</title>
+</head>
+<body>
+
+<?php
+
+$name = $_POST["name"];
+$email = $_POST["email"];
+
+if($name != "" && $email != "")
+{
+    echo "<h2 style='color:green;'>Positive Response</h2>";
+    echo "Form Submitted Successfully.<br><br>";
+
+    echo "Name : " . $name . "<br>";
+    echo "Email : " . $email;
+}
+else
+{
+    echo "<h2 style='color:red;'>Negative Response</h2>";
+    echo "Please fill all the fields.";
+}
+
+?>
+
+</body>
+</html>
